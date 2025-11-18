@@ -200,8 +200,11 @@ if res:
         unsafe_allow_html=True,
     )
 
-    render_tiles("Causes", res.get("causes", []))
-    render_tiles("Treatment Suggestions", res.get("suggestions", []))
+    if "healthy" in label.lower():
+        render_tiles("Maintenance Tips", res.get("suggestions", []))
+    else:
+        render_tiles("Causes", res.get("causes", []))
+        render_tiles("Treatment Suggestions", res.get("suggestions", []))
 
 st.markdown("---")
 st.caption("💡 Tip: Log files are stored in the /logs folder for troubleshooting.")
