@@ -59,6 +59,19 @@ def predict_from_bytes(image_bytes: bytes):
 
     idx = int(np.argmax(preds))
     confidence = float(preds[idx])
+
+    THRESHOLD = 0.7  # tune as needed
+
+    if confidence < THRESHOLD:
+        print(f"[DEBUG] LOW CONF: {confidence} => Unrecognized")
+        return {
+            "label": "Unrecognized",
+            "confidence": round(confidence, 4),
+            "causes": [],
+            "suggestions": [],
+            "_matched_info": {},
+    }
+
     label = CLASS_NAMES[idx] if idx < len(CLASS_NAMES) else str(idx)
 
     info = _get_info_for_label(label)
