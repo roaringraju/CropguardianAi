@@ -109,4 +109,13 @@ git clone https://github.com/roaringraju/CropGuardianAi.git
 cd CropGuardianAi
 pip install requirements.txt
 streamlit run app/ui/streamlit_app.py
+```
+
+## 📸 UI Screenshots
+<img width="1851" height="974" alt="Screenshot 2025-11-22 024155" src="https://github.com/user-attachments/assets/ad76d122-0481-4834-a6d5-4d517c732242" />
+<img width="1841" height="963" alt="Screenshot 2025-11-22 024553" src="https://github.com/user-attachments/assets/d47430be-c310-45f1-a665-319429fc7ec6" />
+<img width="1841" height="964" alt="Screenshot 2025-11-22 024624" src="https://github.com/user-attachments/assets/553619ba-0cf3-409f-b752-9838e90d69cd" />
+<img width="1854" height="973" alt="Screenshot 2025-11-22 024645" src="https://github.com/user-attachments/assets/9bc4af28-73b2-46e9-9f26-0db8d24de16b" />
+
+
 
