@@ -102,11 +102,12 @@ CropGuardianAI/
 
 ## 📦 Installation and Execution
 
-Clone the repository and run :
+Clone the repository and run : 
+Note : clone in python 3.13.7
 
 ```bash
-git clone https://github.com/roaringraju/CropGuardianAi.git
-cd CropGuardianAi
+git clone https://github.com/roaringraju/CropguardianAi.git
+cd CropguardianAi
 pip install requirements.txt
 streamlit run app/ui/streamlit_app.py
 ```
