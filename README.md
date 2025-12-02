@@ -1,6 +1,6 @@
 # 🌱 CropGuardianAI — Plant Disease Detection Using EfficientNet-B3
 
-CropGuardianAI is a deep-learning–powered plant disease detection system built using **TensorFlow**, **EfficientNet-B3**, **FastAPI**, and **Streamlit**.  
+CropguardianAi is a deep-learning–powered plant disease detection system built using **TensorFlow**, **EfficientNet-B3**, **FastAPI**, and **Streamlit**.  
 Users can upload a leaf image and instantly get predictions along with probable causes and treatment suggestions.
 
 ---
@@ -41,27 +41,25 @@ Users can upload a leaf image and instantly get predictions along with probable 
 
 ## 🏗️ Project Structure
 
-CropGuardianAI/
-│── app/
-│ ├── api/
-│ │ ├── routes.py # FastAPI routes
-│ │ └── inference.py # Model loading & prediction logic
-│ ├── ui/
-│ │ └── streamlit_app.py # Streamlit Web UI
-│ └── utils/
-│   └── labels.py
-|   └── diseaseinfo.py
-|   └── preprocess.py
-│
-│── model/
-│ └── model.keras # Trained EfficientNet-B3 model
-│
-│── logs/
-│ └── uvicorn_xxx.log # Backend logs
-│
-├── requirements.txt
-└── README.md
-
+- `CropGuardianAI/`
+  - `app/`
+    - `api/`
+      - `routes.py` – FastAPI routes  
+      - `inference.py` – Model loading & prediction logic
+    - `ui/`
+      - `streamlit_app.py` – Streamlit Web UI
+    - `utils/`
+      - `labels.py`
+      - `diseaseinfo.py`
+      - `preprocess.py`
+  - `model/`
+      - `model.keras` – Trained EfficientNet-B3 model
+  - `logs/`
+    - `uvicorn_xxx.log` – Backend logs
+  - `.gitignore` - ignores logs, cache etc
+  - `.gitattributes` - LFS settings for PlantRecogModelv1.keras
+  - `requirements.txt`
+  - `README.md`
 
 ---
 
