@@ -105,7 +105,7 @@ Clone the repository and run :
 ```bash
 git clone https://github.com/roaringraju/CropguardianAi.git
 cd CropguardianAi
-pip install requirements.txt
+pip install -r requirements.txt
 streamlit run app/ui/streamlit_app.py
 ```
 Note : Clone in python 3.13.7 
